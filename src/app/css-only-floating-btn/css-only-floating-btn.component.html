@@ -1,0 +1,13 @@
+<div class="fab-container">
+    <div class="fab fab-icon-holder">
+        <i class="material-icons plus-btn">add</i>
+    </div>
+    <ul class="fab-options">
+        <li *ngFor="let item of floatingButton" (click)="getAction(item)">
+            <span class="fab-label">{{item?.name}}</span>
+            <div class="fab-icon-holder">
+                <i class="material-icons" [ngStyle]="{'color': item.color}">{{item?.icon}}</i>
+            </div>
+        </li>
+    </ul>
+</div>

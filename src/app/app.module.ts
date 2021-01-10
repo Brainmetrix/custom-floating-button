@@ -7,10 +7,12 @@ import { CustomFloatingButtonComponent } from './custom-floating-button/custom-f
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { CssOnlyFloatingBtnComponent } from './css-only-floating-btn/css-only-floating-btn.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CustomFloatingButtonComponent
+    CustomFloatingButtonComponent,
+    CssOnlyFloatingBtnComponent
   ],
   imports: [
     BrowserModule,
